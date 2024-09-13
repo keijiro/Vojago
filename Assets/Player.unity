@@ -290,14 +290,14 @@ VisualEffect:
       m_Array: []
     m_Vector2f:
       m_Array:
-      - m_Value: {x: 0.097855, y: 4.8927503}
+      - m_Value: {x: 0.13053502, y: 6.526751}
         m_Name: DepthRange
         m_Overridden: 1
     m_Vector3f:
       m_Array: []
     m_Vector4f:
       m_Array:
-      - m_Value: {x: -0.001683116, y: 0.0109010935, z: 0.67311746, w: 0.37862858}
+      - m_Value: {x: -0.0024360418, y: 0.013650715, z: 0.6664802, w: 0.3748951}
         m_Name: RayParams
         m_Overridden: 1
     m_Uint:
@@ -307,18 +307,18 @@ VisualEffect:
     m_Matrix4x4f:
       m_Array:
       - m_Value:
-          e00: -0.4231112
-          e01: -0.1666853
-          e02: -0.8906138
-          e03: -1.1029093
-          e10: 0.0005469322
-          e11: 0.9828859
-          e12: -0.18421458
-          e13: -0.02782745
-          e20: 0.9060776
-          e21: -0.07843034
-          e22: -0.41577888
-          e23: -1.4505602
+          e00: 0.94014835
+          e01: 0.081140235
+          e02: 0.33096433
+          e03: 212.20578
+          e10: 0.0010266602
+          e11: 0.97055894
+          e12: -0.24086161
+          e13: 7.023319
+          e20: -0.34076393
+          e21: 0.22678544
+          e22: 0.91238606
+          e23: 85.57847
           e30: 0
           e31: 0
           e32: 0
@@ -1049,14 +1049,14 @@ VisualEffect:
       m_Array: []
     m_Vector2f:
       m_Array:
-      - m_Value: {x: 0.097855, y: 4.8927503}
+      - m_Value: {x: 0.13053502, y: 6.526751}
         m_Name: DepthRange
         m_Overridden: 1
     m_Vector3f:
       m_Array: []
     m_Vector4f:
       m_Array:
-      - m_Value: {x: -0.001683116, y: 0.0109010935, z: 0.67311746, w: 0.37862858}
+      - m_Value: {x: -0.0024360418, y: 0.013650715, z: 0.6664802, w: 0.3748951}
         m_Name: RayParams
         m_Overridden: 1
     m_Uint:
@@ -1066,18 +1066,18 @@ VisualEffect:
     m_Matrix4x4f:
       m_Array:
       - m_Value:
-          e00: -0.4231112
-          e01: -0.1666853
-          e02: -0.8906138
-          e03: -1.1029093
-          e10: 0.0005469322
-          e11: 0.9828859
-          e12: -0.18421458
-          e13: -0.02782745
-          e20: 0.9060776
-          e21: -0.07843034
-          e22: -0.41577888
-          e23: -1.4505602
+          e00: 0.94014835
+          e01: 0.081140235
+          e02: 0.33096433
+          e03: 212.20578
+          e10: 0.0010266602
+          e11: 0.97055894
+          e12: -0.24086161
+          e13: 7.023319
+          e20: -0.34076393
+          e21: 0.22678544
+          e22: 0.91238606
+          e23: 85.57847
           e30: 0
           e31: 0
           e32: 0
@@ -1554,7 +1554,7 @@ VisualEffect:
       m_Array: []
     m_Vector2f:
       m_Array:
-      - m_Value: {x: 0.097855, y: 4.8927503}
+      - m_Value: {x: 0.13053502, y: 6.526751}
         m_Name: DepthRange
         m_Overridden: 1
     m_Vector3f:
@@ -1579,7 +1579,7 @@ VisualEffect:
         m_Overridden: 1
     m_Vector4f:
       m_Array:
-      - m_Value: {x: -0.001683116, y: 0.0109010935, z: 0.67311746, w: 0.37862858}
+      - m_Value: {x: -0.0024360418, y: 0.013650715, z: 0.6664802, w: 0.3748951}
         m_Name: RayParams
         m_Overridden: 1
     m_Uint:
@@ -1589,18 +1589,18 @@ VisualEffect:
     m_Matrix4x4f:
       m_Array:
       - m_Value:
-          e00: -0.4231112
-          e01: -0.1666853
-          e02: -0.8906138
-          e03: -1.1029093
-          e10: 0.0005469322
-          e11: 0.9828859
-          e12: -0.18421458
-          e13: -0.02782745
-          e20: 0.9060776
-          e21: -0.07843034
-          e22: -0.41577888
-          e23: -1.4505602
+          e00: 0.94014835
+          e01: 0.081140235
+          e02: 0.33096433
+          e03: 212.20578
+          e10: 0.0010266602
+          e11: 0.97055894
+          e12: -0.24086161
+          e13: 7.023319
+          e20: -0.34076393
+          e21: 0.22678544
+          e22: 0.91238606
+          e23: 85.57847
           e30: 0
           e31: 0
           e32: 0
@@ -1705,6 +1705,7 @@ GameObject:
   - component: {fileID: 1335102732}
   - component: {fileID: 1335102731}
   - component: {fileID: 1335102733}
+  - component: {fileID: 1335102734}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1918,6 +1919,14 @@ MonoBehaviour:
       enableFptlForForwardOpaque: 0
       enableBigTilePrepass: 0
       isFptlEnabled: 0
+--- !u!81 &1335102734
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335102728}
+  m_Enabled: 1
 --- !u!1 &1539841714
 GameObject:
   m_ObjectHideFlags: 0
@@ -2161,14 +2170,14 @@ VisualEffect:
       m_Array: []
     m_Vector2f:
       m_Array:
-      - m_Value: {x: 0.097855, y: 4.8927503}
+      - m_Value: {x: 0.13053502, y: 6.526751}
         m_Name: DepthRange
         m_Overridden: 1
     m_Vector3f:
       m_Array: []
     m_Vector4f:
       m_Array:
-      - m_Value: {x: -0.001683116, y: 0.0109010935, z: 0.67311746, w: 0.37862858}
+      - m_Value: {x: -0.0024360418, y: 0.013650715, z: 0.6664802, w: 0.3748951}
         m_Name: RayParams
         m_Overridden: 1
     m_Uint:
@@ -2178,18 +2187,18 @@ VisualEffect:
     m_Matrix4x4f:
       m_Array:
       - m_Value:
-          e00: -0.4231112
-          e01: -0.1666853
-          e02: -0.8906138
-          e03: -1.1029093
-          e10: 0.0005469322
-          e11: 0.9828859
-          e12: -0.18421458
-          e13: -0.02782745
-          e20: 0.9060776
-          e21: -0.07843034
-          e22: -0.41577888
-          e23: -1.4505602
+          e00: 0.94014835
+          e01: 0.081140235
+          e02: 0.33096433
+          e03: 212.20578
+          e10: 0.0010266602
+          e11: 0.97055894
+          e12: -0.24086161
+          e13: 7.023319
+          e20: -0.34076393
+          e21: 0.22678544
+          e22: 0.91238606
+          e23: 85.57847
           e30: 0
           e31: 0
           e32: 0
@@ -2220,6 +2229,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1693886337}
   - component: {fileID: 1693886336}
+  - component: {fileID: 1693886338}
   m_Layer: 0
   m_Name: Timeline
   m_TagString: Untagged
@@ -2250,6 +2260,8 @@ PlayableDirector:
     value: {fileID: 1539841715}
   - key: {fileID: 7172290262646519821, guid: 29bf279c321724b408e66a6bba877707, type: 2}
     value: {fileID: 1315941122}
+  - key: {fileID: -2794773871658940885, guid: 29bf279c321724b408e66a6bba877707, type: 2}
+    value: {fileID: 1693886338}
   m_ExposedReferences:
     m_References:
     - 8339d8f5909d5430c86275f168c368c0: {fileID: 685881873}
@@ -2269,6 +2281,103 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1693886338
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1693886335}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1896919010
 GameObject:
   m_ObjectHideFlags: 0
@@ -2677,14 +2786,14 @@ VisualEffect:
       m_Array: []
     m_Vector2f:
       m_Array:
-      - m_Value: {x: 0.097855, y: 4.8927503}
+      - m_Value: {x: 0.13053502, y: 6.526751}
         m_Name: DepthRange
         m_Overridden: 1
     m_Vector3f:
       m_Array: []
     m_Vector4f:
       m_Array:
-      - m_Value: {x: -0.001683116, y: 0.0109010935, z: 0.67311746, w: 0.37862858}
+      - m_Value: {x: -0.0024360418, y: 0.013650715, z: 0.6664802, w: 0.3748951}
         m_Name: RayParams
         m_Overridden: 1
     m_Uint:
@@ -2694,18 +2803,18 @@ VisualEffect:
     m_Matrix4x4f:
       m_Array:
       - m_Value:
-          e00: -0.4231112
-          e01: -0.1666853
-          e02: -0.8906138
-          e03: -1.1029093
-          e10: 0.0005469322
-          e11: 0.9828859
-          e12: -0.18421458
-          e13: -0.02782745
-          e20: 0.9060776
-          e21: -0.07843034
-          e22: -0.41577888
-          e23: -1.4505602
+          e00: 0.94014835
+          e01: 0.081140235
+          e02: 0.33096433
+          e03: 212.20578
+          e10: 0.0010266602
+          e11: 0.97055894
+          e12: -0.24086161
+          e13: 7.023319
+          e20: -0.34076393
+          e21: 0.22678544
+          e22: 0.91238606
+          e23: 85.57847
           e30: 0
           e31: 0
           e32: 0
@@ -2864,14 +2973,14 @@ VisualEffect:
       m_Array: []
     m_Vector2f:
       m_Array:
-      - m_Value: {x: 0.097855, y: 4.8927503}
+      - m_Value: {x: 0.13053502, y: 6.526751}
         m_Name: DepthRange
         m_Overridden: 1
     m_Vector3f:
       m_Array: []
     m_Vector4f:
       m_Array:
-      - m_Value: {x: -0.001683116, y: 0.0109010935, z: 0.67311746, w: 0.37862858}
+      - m_Value: {x: -0.0024360418, y: 0.013650715, z: 0.6664802, w: 0.3748951}
         m_Name: RayParams
         m_Overridden: 1
     m_Uint:
@@ -2881,18 +2990,18 @@ VisualEffect:
     m_Matrix4x4f:
       m_Array:
       - m_Value:
-          e00: -0.4231112
-          e01: -0.1666853
-          e02: -0.8906138
-          e03: -1.1029093
-          e10: 0.0005469322
-          e11: 0.9828859
-          e12: -0.18421458
-          e13: -0.02782745
-          e20: 0.9060776
-          e21: -0.07843034
-          e22: -0.41577888
-          e23: -1.4505602
+          e00: 0.94014835
+          e01: 0.081140235
+          e02: 0.33096433
+          e03: 212.20578
+          e10: 0.0010266602
+          e11: 0.97055894
+          e12: -0.24086161
+          e13: 7.023319
+          e20: -0.34076393
+          e21: 0.22678544
+          e22: 0.91238606
+          e23: 85.57847
           e30: 0
           e31: 0
           e32: 0
