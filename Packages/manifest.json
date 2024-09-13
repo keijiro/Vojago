@@ -7,7 +7,8 @@
     "jp.keijiro.metavido.timeline": "3.0.1",
     "jp.keijiro.metavido.vfxgraph": "2.0.0",
     "jp.keijiro.metawire": "2.1.1",
-    "jp.keijiro.vfxgraphassets": "3.3.0"
+    "jp.keijiro.vfxgraphassets": "3.3.0",
+    "jp.keijiro.vzovfx": "1.0.0"
   },
   "scopedRegistries": [
     {

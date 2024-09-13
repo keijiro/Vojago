@@ -354,6 +354,99 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1896919011}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &312539728
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 312539729}
+  - component: {fileID: 312539731}
+  - component: {fileID: 312539730}
+  m_Layer: 0
+  m_Name: VZO Receiver
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &312539729
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312539728}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 455605712}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &312539730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312539728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e4567fe10e2f4ef2841158d0a78d2bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _config: {fileID: 11400000, guid: b42f59bec551042bea5eeddea8ef5fdf, type: 2}
+  _channel: 1
+  _eventPerFrame: 1
+  _noteEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1960029762}
+        m_TargetAssemblyTypeName: Vojago.FlashGlitchBridge, Assembly-CSharp
+        m_MethodName: OnNoteChannel1
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &312539731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312539728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e4567fe10e2f4ef2841158d0a78d2bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _config: {fileID: 11400000, guid: b42f59bec551042bea5eeddea8ef5fdf, type: 2}
+  _channel: 0
+  _eventPerFrame: 1
+  _noteEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1960029762}
+        m_TargetAssemblyTypeName: Vojago.FlashGlitchBridge, Assembly-CSharp
+        m_MethodName: OnNoteChannel0
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &455605711
 GameObject:
   m_ObjectHideFlags: 0
@@ -384,6 +477,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 131925380}
+  - {fileID: 312539729}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &685881869
@@ -2428,10 +2522,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1853b406ae8c45ed94a1997dc7c6679, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _releaseTime1: 0.5
-  _releaseTime2: 0.5
-  _seed: 0
-  _hue: 0
+  <ReleaseTime1>k__BackingField: 0.12
+  <ReleaseTime2>k__BackingField: 0.25
+  <Seed>k__BackingField: 0
+  <Hue>k__BackingField: 0
 --- !u!114 &1960029762
 MonoBehaviour:
   m_ObjectHideFlags: 0

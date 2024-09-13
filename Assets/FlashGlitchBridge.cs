@@ -37,11 +37,6 @@ public sealed class FlashGlitchBridge : MonoBehaviour
     {
         if (_demuxer.ColorTexture == null) return;
         _controller.Source = _demuxer.ColorTexture;
-
-        if (Random.value < 0.01f)
-        {
-            if (Random.value < 0.7f) OnNoteChannel0(0, 1); else OnNoteChannel1(0, 1);
-        }
     }
 }
 
