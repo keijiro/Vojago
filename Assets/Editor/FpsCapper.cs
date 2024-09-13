@@ -2,43 +2,48 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.LowLevel;
 using System.Linq;
+using System.Threading;
 
 namespace EditorUtils {
 
+//
+// Serializable settings
+//
 [FilePath("UserSettings/FpsCapperSettings.asset",
           FilePathAttribute.Location.ProjectFolder)]
 public sealed class FpsCapperSettings : ScriptableSingleton<FpsCapperSettings>
 {
+    public bool enable = false;
     public int targetFrameRate = 60;
     public void Save() => Save(true);
     void OnDisable() => Save();
 }
 
+//
+// Settings GUI
+//
 sealed class FpsCapperSettingsProvider : SettingsProvider
 {
     public FpsCapperSettingsProvider()
       : base("Project/FPS Capper", SettingsScope.Project) {}
 
-    static readonly string _helpText =
-      "To enable this feature, the VSync switch in the Game View " +
-      "needs to be turned off.";
-
     public override void OnGUI(string search)
     {
         var settings = FpsCapperSettings.instance;
+        var enable = settings.enable;
         var fps = settings.targetFrameRate;
 
         EditorGUI.BeginChangeCheck();
 
-        fps = EditorGUILayout.DelayedIntField("Target Frame Rate", fps);
+        enable = EditorGUILayout.Toggle("Enable", enable);
+        fps = EditorGUILayout.IntField("Target Frame Rate", fps);
 
         if (EditorGUI.EndChangeCheck())
         {
+            settings.enable = enable;
             settings.targetFrameRate = fps;
             settings.Save();
         }
-
-        EditorGUILayout.HelpBox(_helpText, MessageType.None);
     }
 
     [SettingsProvider]
@@ -46,27 +51,60 @@ sealed class FpsCapperSettingsProvider : SettingsProvider
       => new FpsCapperSettingsProvider();
 }
 
+//
+// Player loop system
+//
 [UnityEditor.InitializeOnLoad]
 sealed class FpsCapperSystem
 {
-    static FpsCapperSystem()
-      => InsertPlayerLoopSystem();
+    // Synchronization object
+    static AutoResetEvent _sync;
 
-    static bool IsCapturing
-      => Time.captureDeltaTime != 0;
+    // Interval in milliseconds
+    static int IntervalMsec;
 
-    static int TargetFps
-      => FpsCapperSettings.instance.targetFrameRate;
-
-    static void UpdateTargetFrameRate()
-      => Application.targetFrameRate = IsCapturing ? -1 : TargetFps;
-
-    static void InsertPlayerLoopSystem()
+    // Interval thread function
+    static void IntervalThread()
     {
+        _sync = new AutoResetEvent(true);
+
+        while (true)
+        {
+            Thread.Sleep(Mathf.Max(1, IntervalMsec));
+            _sync.Set();
+        }
+    }
+
+    // Custom system update function
+    static void UpdateSystem()
+    {
+        var cfg = FpsCapperSettings.instance;
+
+        // Property update
+        IntervalMsec = 1000 / Mathf.Max(5, cfg.targetFrameRate);
+
+        // Rejection cases
+        if (_sync == null) return;              // Not ready
+        if (!cfg.enable) return;                // Not enabled
+        if (cfg.targetFrameRate < 1) return;    // Wrong FPS value
+        if (Time.captureDeltaTime != 0) return; // Recording
+
+        // Synchronization with the interval thread
+        _sync.WaitOne();
+    }
+
+    // Static constructor (custom system installation)
+    static FpsCapperSystem()
+    {
+        // Interval thread launch
+        new Thread(IntervalThread).Start();
+
+        // Custom system definition
         var system = new PlayerLoopSystem()
           { type = typeof(FpsCapperSystem),
-            updateDelegate = UpdateTargetFrameRate };
+            updateDelegate = UpdateSystem };
 
+        // Custom system insertion
         var playerLoop = PlayerLoop.GetCurrentPlayerLoop();
 
         for (var i = 0; i < playerLoop.subSystemList.Length; i++)
