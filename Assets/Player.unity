@@ -297,7 +297,7 @@ VisualEffect:
       m_Array: []
     m_Vector4f:
       m_Array:
-      - m_Value: {x: -0.0024360418, y: 0.013650715, z: 0.6664802, w: 0.3748951}
+      - m_Value: {x: -0.002488017, y: 0.01406306, z: 0.6688918, w: 0.37625164}
         m_Name: RayParams
         m_Overridden: 1
     m_Uint:
@@ -307,18 +307,18 @@ VisualEffect:
     m_Matrix4x4f:
       m_Array:
       - m_Value:
-          e00: 0.94014835
-          e01: 0.081140235
-          e02: 0.33096433
-          e03: 212.20578
-          e10: 0.0010266602
-          e11: 0.97055894
-          e12: -0.24086161
-          e13: 7.023319
-          e20: -0.34076393
-          e21: 0.22678544
-          e22: 0.91238606
-          e23: 85.57847
+          e00: -0.4236877
+          e01: 0.012825815
+          e02: 0.9057176
+          e03: 241.17987
+          e10: 0.0020501032
+          e11: 0.9999108
+          e12: -0.0132006565
+          e13: 6.98217
+          e20: -0.90580606
+          e21: -0.0037361393
+          e22: -0.42367613
+          e23: 112.36104
           e30: 0
           e31: 0
           e32: 0
@@ -331,14 +331,17 @@ VisualEffect:
       m_Array: []
     m_NamedObject:
       m_Array:
-      - m_Value: {fileID: 0}
+      - m_Value: {fileID: 1188414714}
         m_Name: ColorMap
         m_Overridden: 1
-      - m_Value: {fileID: 0}
+      - m_Value: {fileID: 1193676525}
         m_Name: DepthMap
         m_Overridden: 1
     m_Bool:
-      m_Array: []
+      m_Array:
+      - m_Value: 0
+        m_Name: Spawn
+        m_Overridden: 1
 --- !u!4 &244947292
 Transform:
   m_ObjectHideFlags: 0
@@ -447,6 +450,75 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!84 &344756664
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 6
+  m_Width: 960
+  m_Height: 1080
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthStencilFormat: 0
+  m_ColorFormat: 57
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 1
+  m_UseDynamicScale: 0
+  m_UseDynamicScaleExplicit: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_EnableRandomWrite: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
+  m_ShadowSamplingMode: 2
+--- !u!1 &362545200
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 362545201}
+  m_Layer: 0
+  m_Name: Offset
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &362545201
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362545200}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1335102732}
+  m_Father: {fileID: 1083405546}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &455605711
 GameObject:
   m_ObjectHideFlags: 0
@@ -911,6 +983,43 @@ MonoBehaviour:
   m_Property:
     m_Name: ReferencePosition
   Target: {fileID: 1335102732}
+--- !u!84 &890733869
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 6
+  m_Width: 960
+  m_Height: 540
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthStencilFormat: 0
+  m_ColorFormat: 45
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_UseDynamicScaleExplicit: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_EnableRandomWrite: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
+  m_ShadowSamplingMode: 2
 --- !u!1 &918701672
 GameObject:
   m_ObjectHideFlags: 0
@@ -1041,7 +1150,7 @@ VisualEffect:
       m_Array: []
     m_Vector4f:
       m_Array:
-      - m_Value: {x: -0.0024360418, y: 0.013650715, z: 0.6664802, w: 0.3748951}
+      - m_Value: {x: -0.002488017, y: 0.01406306, z: 0.6688918, w: 0.37625164}
         m_Name: RayParams
         m_Overridden: 1
     m_Uint:
@@ -1051,18 +1160,18 @@ VisualEffect:
     m_Matrix4x4f:
       m_Array:
       - m_Value:
-          e00: 0.94014835
-          e01: 0.081140235
-          e02: 0.33096433
-          e03: 212.20578
-          e10: 0.0010266602
-          e11: 0.97055894
-          e12: -0.24086161
-          e13: 7.023319
-          e20: -0.34076393
-          e21: 0.22678544
-          e22: 0.91238606
-          e23: 85.57847
+          e00: -0.4236877
+          e01: 0.012825815
+          e02: 0.9057176
+          e03: 241.17987
+          e10: 0.0020501032
+          e11: 0.9999108
+          e12: -0.0132006565
+          e13: 6.98217
+          e20: -0.90580606
+          e21: -0.0037361393
+          e22: -0.42367613
+          e23: 112.36104
           e30: 0
           e31: 0
           e32: 0
@@ -1075,10 +1184,10 @@ VisualEffect:
       m_Array: []
     m_NamedObject:
       m_Array:
-      - m_Value: {fileID: 0}
+      - m_Value: {fileID: 1188414714}
         m_Name: ColorMap
         m_Overridden: 1
-      - m_Value: {fileID: 0}
+      - m_Value: {fileID: 1193676525}
         m_Name: DepthMap
         m_Overridden: 1
     m_Bool:
@@ -1454,7 +1563,148 @@ VisualEffect:
     m_NamedObject:
       m_Array: []
     m_Bool:
-      m_Array: []
+      m_Array:
+      - m_Value: 0
+        m_Name: Spawn
+        m_Overridden: 1
+--- !u!1 &1083405545
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1083405546}
+  m_Layer: 0
+  m_Name: Rotation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1083405546
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1083405545}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 362545201}
+  m_Father: {fileID: 1539841715}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1087306234
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1087306235}
+  m_Layer: 0
+  m_Name: Fast Follower
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1087306235
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1087306234}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1539841715}
+  m_Father: {fileID: 1578729410}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!84 &1188414714
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 6
+  m_Width: 960
+  m_Height: 1080
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthStencilFormat: 0
+  m_ColorFormat: 57
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 1
+  m_UseDynamicScale: 0
+  m_UseDynamicScaleExplicit: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_EnableRandomWrite: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
+  m_ShadowSamplingMode: 2
+--- !u!84 &1193676525
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 6
+  m_Width: 960
+  m_Height: 540
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthStencilFormat: 0
+  m_ColorFormat: 45
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_UseDynamicScaleExplicit: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_EnableRandomWrite: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
+  m_ShadowSamplingMode: 2
 --- !u!1 &1315941119
 GameObject:
   m_ObjectHideFlags: 0
@@ -1469,6 +1719,7 @@ GameObject:
   - component: {fileID: 1315941124}
   - component: {fileID: 1315941123}
   - component: {fileID: 1315941126}
+  - component: {fileID: 1315941127}
   m_Layer: 0
   m_Name: Camera Proxy
   m_TagString: Untagged
@@ -1564,8 +1815,11 @@ VisualEffect:
         m_Overridden: 1
     m_Vector4f:
       m_Array:
-      - m_Value: {x: -0.0024360418, y: 0.013650715, z: 0.6664802, w: 0.3748951}
+      - m_Value: {x: -0.002488017, y: 0.01406306, z: 0.6688918, w: 0.37625164}
         m_Name: RayParams
+        m_Overridden: 1
+      - m_Value: {x: 0.16301368, y: 0.51, z: 0.51, w: 1}
+        m_Name: Line Color
         m_Overridden: 1
     m_Uint:
       m_Array: []
@@ -1574,18 +1828,18 @@ VisualEffect:
     m_Matrix4x4f:
       m_Array:
       - m_Value:
-          e00: 0.94014835
-          e01: 0.081140235
-          e02: 0.33096433
-          e03: 212.20578
-          e10: 0.0010266602
-          e11: 0.97055894
-          e12: -0.24086161
-          e13: 7.023319
-          e20: -0.34076393
-          e21: 0.22678544
-          e22: 0.91238606
-          e23: 85.57847
+          e00: -0.4236877
+          e01: 0.012825815
+          e02: 0.9057176
+          e03: 241.17987
+          e10: 0.0020501032
+          e11: 0.9999108
+          e12: -0.0132006565
+          e13: 6.98217
+          e20: -0.90580606
+          e21: -0.0037361393
+          e22: -0.42367613
+          e23: 112.36104
           e30: 0
           e31: 0
           e32: 0
@@ -1598,10 +1852,10 @@ VisualEffect:
       m_Array: []
     m_NamedObject:
       m_Array:
-      - m_Value: {fileID: 0}
+      - m_Value: {fileID: 1188414714}
         m_Name: ColorMap
         m_Overridden: 1
-      - m_Value: {fileID: 0}
+      - m_Value: {fileID: 1193676525}
         m_Name: DepthMap
         m_Overridden: 1
     m_Bool:
@@ -1679,6 +1933,28 @@ MonoBehaviour:
   m_Property:
     m_Name: Raw Camera Xform
   Target: {fileID: 685881873}
+--- !u!95 &1315941127
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315941119}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1335102728
 GameObject:
   m_ObjectHideFlags: 0
@@ -1691,6 +1967,7 @@ GameObject:
   - component: {fileID: 1335102731}
   - component: {fileID: 1335102733}
   - component: {fileID: 1335102734}
+  - component: {fileID: 1335102735}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1731,7 +2008,7 @@ Camera:
     height: 1
   near clip plane: 0.02
   far clip plane: 25
-  field of view: 50
+  field of view: 41.5
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -1763,7 +2040,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1960029758}
-  m_Father: {fileID: 1539841715}
+  m_Father: {fileID: 362545201}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1335102733
 MonoBehaviour:
@@ -1912,6 +2189,28 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1335102728}
   m_Enabled: 1
+--- !u!95 &1335102735
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335102728}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1539841714
 GameObject:
   m_ObjectHideFlags: 0
@@ -1922,7 +2221,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1539841715}
   m_Layer: 0
-  m_Name: Offset
+  m_Name: Target Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1936,13 +2235,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1539841714}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1335102732}
-  m_Father: {fileID: 1578729410}
+  - {fileID: 1083405546}
+  m_Father: {fileID: 1087306235}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1578729408
 GameObject:
@@ -1954,7 +2253,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1578729410}
   m_Layer: 0
-  m_Name: Camera Follower
+  m_Name: Slow Follower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1973,7 +2272,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1539841715}
+  - {fileID: 1087306235}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1671746459
@@ -2121,7 +2420,7 @@ VisualEffect:
       m_Array: []
     m_Vector4f:
       m_Array:
-      - m_Value: {x: -0.0024360418, y: 0.013650715, z: 0.6664802, w: 0.3748951}
+      - m_Value: {x: -0.002488017, y: 0.01406306, z: 0.6688918, w: 0.37625164}
         m_Name: RayParams
         m_Overridden: 1
     m_Uint:
@@ -2131,18 +2430,18 @@ VisualEffect:
     m_Matrix4x4f:
       m_Array:
       - m_Value:
-          e00: 0.94014835
-          e01: 0.081140235
-          e02: 0.33096433
-          e03: 212.20578
-          e10: 0.0010266602
-          e11: 0.97055894
-          e12: -0.24086161
-          e13: 7.023319
-          e20: -0.34076393
-          e21: 0.22678544
-          e22: 0.91238606
-          e23: 85.57847
+          e00: -0.4236877
+          e01: 0.012825815
+          e02: 0.9057176
+          e03: 241.17987
+          e10: 0.0020501032
+          e11: 0.9999108
+          e12: -0.0132006565
+          e13: 6.98217
+          e20: -0.90580606
+          e21: -0.0037361393
+          e22: -0.42367613
+          e23: 112.36104
           e30: 0
           e31: 0
           e32: 0
@@ -2155,14 +2454,17 @@ VisualEffect:
       m_Array: []
     m_NamedObject:
       m_Array:
-      - m_Value: {fileID: 0}
+      - m_Value: {fileID: 1188414714}
         m_Name: ColorMap
         m_Overridden: 1
-      - m_Value: {fileID: 0}
+      - m_Value: {fileID: 1193676525}
         m_Name: DepthMap
         m_Overridden: 1
     m_Bool:
-      m_Array: []
+      m_Array:
+      - m_Value: 1
+        m_Name: Spawn
+        m_Overridden: 1
 --- !u!1 &1693886335
 GameObject:
   m_ObjectHideFlags: 0
@@ -2201,15 +2503,25 @@ PlayableDirector:
   - key: {fileID: 3622552067056890972, guid: 29bf279c321724b408e66a6bba877707, type: 2}
     value: {fileID: 1578729410}
   - key: {fileID: 5779084366072758666, guid: 29bf279c321724b408e66a6bba877707, type: 2}
-    value: {fileID: 1539841715}
+    value: {fileID: 1083405546}
   - key: {fileID: 7172290262646519821, guid: 29bf279c321724b408e66a6bba877707, type: 2}
     value: {fileID: 1315941122}
   - key: {fileID: -2794773871658940885, guid: 29bf279c321724b408e66a6bba877707, type: 2}
     value: {fileID: 1693886338}
+  - key: {fileID: -6891916623103762368, guid: 29bf279c321724b408e66a6bba877707, type: 2}
+    value: {fileID: 1315941127}
+  - key: {fileID: 6964674530100234626, guid: 29bf279c321724b408e66a6bba877707, type: 2}
+    value: {fileID: 1087306235}
+  - key: {fileID: 1940445973097715046, guid: 29bf279c321724b408e66a6bba877707, type: 2}
+    value: {fileID: 362545201}
+  - key: {fileID: -799230206489907853, guid: 29bf279c321724b408e66a6bba877707, type: 2}
+    value: {fileID: 1335102735}
   m_ExposedReferences:
     m_References:
     - 8339d8f5909d5430c86275f168c368c0: {fileID: 685881873}
     - f89cb14a97cc7451ba84b1f398124d3b: {fileID: 685881873}
+    - c5aac8040895b4f7b871f7714fb2c7a1: {fileID: 685881873}
+    - 97287fce8ffae49d096eaf99f6f8b09c: {fileID: 685881873}
 --- !u!4 &1693886337
 Transform:
   m_ObjectHideFlags: 0
@@ -2352,12 +2664,12 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1315941122}
+  - {fileID: 691815638}
   - {fileID: 918701677}
   - {fileID: 2143341409}
   - {fileID: 1671746460}
   - {fileID: 2134490377}
   - {fileID: 1081239912}
-  - {fileID: 691815638}
   - {fileID: 244947292}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2737,7 +3049,7 @@ VisualEffect:
       m_Array: []
     m_Vector4f:
       m_Array:
-      - m_Value: {x: -0.0024360418, y: 0.013650715, z: 0.6664802, w: 0.3748951}
+      - m_Value: {x: -0.002488017, y: 0.01406306, z: 0.6688918, w: 0.37625164}
         m_Name: RayParams
         m_Overridden: 1
     m_Uint:
@@ -2747,18 +3059,18 @@ VisualEffect:
     m_Matrix4x4f:
       m_Array:
       - m_Value:
-          e00: 0.94014835
-          e01: 0.081140235
-          e02: 0.33096433
-          e03: 212.20578
-          e10: 0.0010266602
-          e11: 0.97055894
-          e12: -0.24086161
-          e13: 7.023319
-          e20: -0.34076393
-          e21: 0.22678544
-          e22: 0.91238606
-          e23: 85.57847
+          e00: -0.4236877
+          e01: 0.012825815
+          e02: 0.9057176
+          e03: 241.17987
+          e10: 0.0020501032
+          e11: 0.9999108
+          e12: -0.0132006565
+          e13: 6.98217
+          e20: -0.90580606
+          e21: -0.0037361393
+          e22: -0.42367613
+          e23: 112.36104
           e30: 0
           e31: 0
           e32: 0
@@ -2771,10 +3083,10 @@ VisualEffect:
       m_Array: []
     m_NamedObject:
       m_Array:
-      - m_Value: {fileID: 0}
+      - m_Value: {fileID: 1188414714}
         m_Name: ColorMap
         m_Overridden: 1
-      - m_Value: {fileID: 0}
+      - m_Value: {fileID: 1193676525}
         m_Name: DepthMap
         m_Overridden: 1
     m_Bool:
@@ -2924,7 +3236,7 @@ VisualEffect:
       m_Array: []
     m_Vector4f:
       m_Array:
-      - m_Value: {x: -0.0024360418, y: 0.013650715, z: 0.6664802, w: 0.3748951}
+      - m_Value: {x: -0.002488017, y: 0.01406306, z: 0.6688918, w: 0.37625164}
         m_Name: RayParams
         m_Overridden: 1
     m_Uint:
@@ -2934,18 +3246,18 @@ VisualEffect:
     m_Matrix4x4f:
       m_Array:
       - m_Value:
-          e00: 0.94014835
-          e01: 0.081140235
-          e02: 0.33096433
-          e03: 212.20578
-          e10: 0.0010266602
-          e11: 0.97055894
-          e12: -0.24086161
-          e13: 7.023319
-          e20: -0.34076393
-          e21: 0.22678544
-          e22: 0.91238606
-          e23: 85.57847
+          e00: -0.4236877
+          e01: 0.012825815
+          e02: 0.9057176
+          e03: 241.17987
+          e10: 0.0020501032
+          e11: 0.9999108
+          e12: -0.0132006565
+          e13: 6.98217
+          e20: -0.90580606
+          e21: -0.0037361393
+          e22: -0.42367613
+          e23: 112.36104
           e30: 0
           e31: 0
           e32: 0
@@ -2958,10 +3270,10 @@ VisualEffect:
       m_Array: []
     m_NamedObject:
       m_Array:
-      - m_Value: {fileID: 0}
+      - m_Value: {fileID: 1188414714}
         m_Name: ColorMap
         m_Overridden: 1
-      - m_Value: {fileID: 0}
+      - m_Value: {fileID: 1193676525}
         m_Name: DepthMap
         m_Overridden: 1
     m_Bool:
