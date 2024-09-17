@@ -3906,8 +3906,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ad8446547c414dd1b854dd3311c258c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _editorOnlyObject: {fileID: 589120215}
-  _playerOnlyObject: {fileID: 72375159}
+  _mainTimeline: {fileID: 1693886336}
+  _editorTimeline: {fileID: 589120217}
+  _playerTimeline: {fileID: 72375161}
 --- !u!1 &2057512321
 GameObject:
   m_ObjectHideFlags: 0
