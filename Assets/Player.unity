@@ -330,7 +330,7 @@ VisualEffect:
       m_Array: []
     m_Vector4f:
       m_Array:
-      - m_Value: {x: -0.0027829409, y: 0.012994766, z: 0.6709262, w: 0.377396}
+      - m_Value: {x: -0.0028704405, y: 0.013627052, z: 0.6707058, w: 0.377272}
         m_Name: RayParams
         m_Overridden: 1
     m_Uint:
@@ -340,18 +340,18 @@ VisualEffect:
     m_Matrix4x4f:
       m_Array:
       - m_Value:
-          e00: 0.9915035
-          e01: -0.032341897
-          e02: -0.12599543
-          e03: 11.671864
-          e10: 0.006190613
-          e11: 0.97923285
-          e12: -0.20264415
-          e13: -0.28113383
-          e20: 0.12993276
-          e21: 0.2001424
-          e22: 0.971113
-          e23: 23.396082
+          e00: 0.9230082
+          e01: -0.0072235153
+          e02: 0.3847125
+          e03: 2.9436512
+          e10: 0.01732088
+          e11: 0.9995903
+          e12: -0.02278782
+          e13: -0.22663084
+          e20: -0.38439026
+          e21: 0.027696904
+          e22: 0.9227551
+          e23: 13.775167
           e30: 0
           e31: 0
           e32: 0
@@ -364,10 +364,10 @@ VisualEffect:
       m_Array: []
     m_NamedObject:
       m_Array:
-      - m_Value: {fileID: 1092101748}
+      - m_Value: {fileID: 1913159088}
         m_Name: ColorMap
         m_Overridden: 1
-      - m_Value: {fileID: 2000329093}
+      - m_Value: {fileID: 422317664}
         m_Name: DepthMap
         m_Overridden: 1
     m_Bool:
@@ -417,6 +417,7 @@ GameObject:
   - component: {fileID: 312539729}
   - component: {fileID: 312539731}
   - component: {fileID: 312539730}
+  - component: {fileID: 312539732}
   m_Layer: 0
   m_Name: VZO Receiver
   m_TagString: Untagged
@@ -499,6 +500,36 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &312539732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312539728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e4567fe10e2f4ef2841158d0a78d2bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _config: {fileID: 11400000, guid: b42f59bec551042bea5eeddea8ef5fdf, type: 2}
+  _channel: 10
+  _eventPerFrame: 1
+  _noteEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1693886336}
+        m_TargetAssemblyTypeName: UnityEngine.Playables.PlayableDirector, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &362545200
 GameObject:
   m_ObjectHideFlags: 0
@@ -531,6 +562,43 @@ Transform:
   - {fileID: 991858512}
   m_Father: {fileID: 1083405546}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!84 &422317664
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 6
+  m_Width: 960
+  m_Height: 540
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthStencilFormat: 0
+  m_ColorFormat: 45
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_UseDynamicScaleExplicit: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_EnableRandomWrite: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
+  m_ShadowSamplingMode: 2
 --- !u!1 &455605711
 GameObject:
   m_ObjectHideFlags: 0
@@ -1202,7 +1270,7 @@ VisualEffect:
       m_Array: []
     m_Vector4f:
       m_Array:
-      - m_Value: {x: -0.0027829409, y: 0.012994766, z: 0.6709262, w: 0.377396}
+      - m_Value: {x: -0.0028704405, y: 0.013627052, z: 0.6707058, w: 0.377272}
         m_Name: RayParams
         m_Overridden: 1
     m_Uint:
@@ -1212,18 +1280,18 @@ VisualEffect:
     m_Matrix4x4f:
       m_Array:
       - m_Value:
-          e00: 0.9915035
-          e01: -0.032341897
-          e02: -0.12599543
-          e03: 11.671864
-          e10: 0.006190613
-          e11: 0.97923285
-          e12: -0.20264415
-          e13: -0.28113383
-          e20: 0.12993276
-          e21: 0.2001424
-          e22: 0.971113
-          e23: 23.396082
+          e00: 0.9230082
+          e01: -0.0072235153
+          e02: 0.3847125
+          e03: 2.9436512
+          e10: 0.01732088
+          e11: 0.9995903
+          e12: -0.02278782
+          e13: -0.22663084
+          e20: -0.38439026
+          e21: 0.027696904
+          e22: 0.9227551
+          e23: 13.775167
           e30: 0
           e31: 0
           e32: 0
@@ -1236,10 +1304,10 @@ VisualEffect:
       m_Array: []
     m_NamedObject:
       m_Array:
-      - m_Value: {fileID: 1092101748}
+      - m_Value: {fileID: 1913159088}
         m_Name: ColorMap
         m_Overridden: 1
-      - m_Value: {fileID: 2000329093}
+      - m_Value: {fileID: 422317664}
         m_Name: DepthMap
         m_Overridden: 1
     m_Bool:
@@ -1988,7 +2056,7 @@ VisualEffect:
         m_Overridden: 1
     m_Vector4f:
       m_Array:
-      - m_Value: {x: -0.0027829409, y: 0.012994766, z: 0.6709262, w: 0.377396}
+      - m_Value: {x: -0.0028704405, y: 0.013627052, z: 0.6707058, w: 0.377272}
         m_Name: RayParams
         m_Overridden: 1
       - m_Value: {x: 0.16301368, y: 0.51, z: 0.51, w: 1}
@@ -2001,18 +2069,18 @@ VisualEffect:
     m_Matrix4x4f:
       m_Array:
       - m_Value:
-          e00: 0.9915035
-          e01: -0.032341897
-          e02: -0.12599543
-          e03: 11.671864
-          e10: 0.006190613
-          e11: 0.97923285
-          e12: -0.20264415
-          e13: -0.28113383
-          e20: 0.12993276
-          e21: 0.2001424
-          e22: 0.971113
-          e23: 23.396082
+          e00: 0.9230082
+          e01: -0.0072235153
+          e02: 0.3847125
+          e03: 2.9436512
+          e10: 0.01732088
+          e11: 0.9995903
+          e12: -0.02278782
+          e13: -0.22663084
+          e20: -0.38439026
+          e21: 0.027696904
+          e22: 0.9227551
+          e23: 13.775167
           e30: 0
           e31: 0
           e32: 0
@@ -2025,10 +2093,10 @@ VisualEffect:
       m_Array: []
     m_NamedObject:
       m_Array:
-      - m_Value: {fileID: 1092101748}
+      - m_Value: {fileID: 1913159088}
         m_Name: ColorMap
         m_Overridden: 1
-      - m_Value: {fileID: 2000329093}
+      - m_Value: {fileID: 422317664}
         m_Name: DepthMap
         m_Overridden: 1
     m_Bool:
@@ -2612,7 +2680,7 @@ VisualEffect:
       m_Array: []
     m_Vector4f:
       m_Array:
-      - m_Value: {x: -0.0027829409, y: 0.012994766, z: 0.6709262, w: 0.377396}
+      - m_Value: {x: -0.0028704405, y: 0.013627052, z: 0.6707058, w: 0.377272}
         m_Name: RayParams
         m_Overridden: 1
     m_Uint:
@@ -2622,18 +2690,18 @@ VisualEffect:
     m_Matrix4x4f:
       m_Array:
       - m_Value:
-          e00: 0.9915035
-          e01: -0.032341897
-          e02: -0.12599543
-          e03: 11.671864
-          e10: 0.006190613
-          e11: 0.97923285
-          e12: -0.20264415
-          e13: -0.28113383
-          e20: 0.12993276
-          e21: 0.2001424
-          e22: 0.971113
-          e23: 23.396082
+          e00: 0.9230082
+          e01: -0.0072235153
+          e02: 0.3847125
+          e03: 2.9436512
+          e10: 0.01732088
+          e11: 0.9995903
+          e12: -0.02278782
+          e13: -0.22663084
+          e20: -0.38439026
+          e21: 0.027696904
+          e22: 0.9227551
+          e23: 13.775167
           e30: 0
           e31: 0
           e32: 0
@@ -2646,10 +2714,10 @@ VisualEffect:
       m_Array: []
     m_NamedObject:
       m_Array:
-      - m_Value: {fileID: 1092101748}
+      - m_Value: {fileID: 1913159088}
         m_Name: ColorMap
         m_Overridden: 1
-      - m_Value: {fileID: 2000329093}
+      - m_Value: {fileID: 422317664}
         m_Name: DepthMap
         m_Overridden: 1
     m_Bool:
@@ -2999,7 +3067,7 @@ VisualEffect:
       m_Array: []
     m_Vector4f:
       m_Array:
-      - m_Value: {x: -0.0027829409, y: 0.012994766, z: 0.6709262, w: 0.377396}
+      - m_Value: {x: -0.0028704405, y: 0.013627052, z: 0.6707058, w: 0.377272}
         m_Name: RayParams
         m_Overridden: 1
     m_Uint:
@@ -3009,18 +3077,18 @@ VisualEffect:
     m_Matrix4x4f:
       m_Array:
       - m_Value:
-          e00: 0.9915035
-          e01: -0.032341897
-          e02: -0.12599543
-          e03: 11.671864
-          e10: 0.006190613
-          e11: 0.97923285
-          e12: -0.20264415
-          e13: -0.28113383
-          e20: 0.12993276
-          e21: 0.2001424
-          e22: 0.971113
-          e23: 23.396082
+          e00: 0.9230082
+          e01: -0.0072235153
+          e02: 0.3847125
+          e03: 2.9436512
+          e10: 0.01732088
+          e11: 0.9995903
+          e12: -0.02278782
+          e13: -0.22663084
+          e20: -0.38439026
+          e21: 0.027696904
+          e22: 0.9227551
+          e23: 13.775167
           e30: 0
           e31: 0
           e32: 0
@@ -3033,10 +3101,10 @@ VisualEffect:
       m_Array: []
     m_NamedObject:
       m_Array:
-      - m_Value: {fileID: 1092101748}
+      - m_Value: {fileID: 1913159088}
         m_Name: ColorMap
         m_Overridden: 1
-      - m_Value: {fileID: 2000329093}
+      - m_Value: {fileID: 422317664}
         m_Name: DepthMap
         m_Overridden: 1
     m_Bool:
@@ -3088,7 +3156,7 @@ PlayableDirector:
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: 29bf279c321724b408e66a6bba877707, type: 2}
-  m_InitialState: 1
+  m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
@@ -3334,6 +3402,43 @@ Transform:
   - {fileID: 1630456159}
   m_Father: {fileID: 957785983}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!84 &1913159088
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 6
+  m_Width: 960
+  m_Height: 1080
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthStencilFormat: 0
+  m_ColorFormat: 57
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 1
+  m_UseDynamicScale: 0
+  m_UseDynamicScaleExplicit: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_EnableRandomWrite: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
+  m_ShadowSamplingMode: 2
 --- !u!1 &1936418207
 GameObject:
   m_ObjectHideFlags: 0
@@ -3841,7 +3946,7 @@ VisualEffect:
       m_Array: []
     m_Vector4f:
       m_Array:
-      - m_Value: {x: -0.0027829409, y: 0.012994766, z: 0.6709262, w: 0.377396}
+      - m_Value: {x: -0.0028704405, y: 0.013627052, z: 0.6707058, w: 0.377272}
         m_Name: RayParams
         m_Overridden: 1
     m_Uint:
@@ -3851,18 +3956,18 @@ VisualEffect:
     m_Matrix4x4f:
       m_Array:
       - m_Value:
-          e00: 0.9915035
-          e01: -0.032341897
-          e02: -0.12599543
-          e03: 11.671864
-          e10: 0.006190613
-          e11: 0.97923285
-          e12: -0.20264415
-          e13: -0.28113383
-          e20: 0.12993276
-          e21: 0.2001424
-          e22: 0.971113
-          e23: 23.396082
+          e00: 0.9230082
+          e01: -0.0072235153
+          e02: 0.3847125
+          e03: 2.9436512
+          e10: 0.01732088
+          e11: 0.9995903
+          e12: -0.02278782
+          e13: -0.22663084
+          e20: -0.38439026
+          e21: 0.027696904
+          e22: 0.9227551
+          e23: 13.775167
           e30: 0
           e31: 0
           e32: 0
@@ -3875,10 +3980,10 @@ VisualEffect:
       m_Array: []
     m_NamedObject:
       m_Array:
-      - m_Value: {fileID: 1092101748}
+      - m_Value: {fileID: 1913159088}
         m_Name: ColorMap
         m_Overridden: 1
-      - m_Value: {fileID: 2000329093}
+      - m_Value: {fileID: 422317664}
         m_Name: DepthMap
         m_Overridden: 1
     m_Bool:
@@ -4033,7 +4138,7 @@ VisualEffect:
       m_Array: []
     m_Vector4f:
       m_Array:
-      - m_Value: {x: -0.0027829409, y: 0.012994766, z: 0.6709262, w: 0.377396}
+      - m_Value: {x: -0.0028704405, y: 0.013627052, z: 0.6707058, w: 0.377272}
         m_Name: RayParams
         m_Overridden: 1
     m_Uint:
@@ -4043,18 +4148,18 @@ VisualEffect:
     m_Matrix4x4f:
       m_Array:
       - m_Value:
-          e00: 0.9915035
-          e01: -0.032341897
-          e02: -0.12599543
-          e03: 11.671864
-          e10: 0.006190613
-          e11: 0.97923285
-          e12: -0.20264415
-          e13: -0.28113383
-          e20: 0.12993276
-          e21: 0.2001424
-          e22: 0.971113
-          e23: 23.396082
+          e00: 0.9230082
+          e01: -0.0072235153
+          e02: 0.3847125
+          e03: 2.9436512
+          e10: 0.01732088
+          e11: 0.9995903
+          e12: -0.02278782
+          e13: -0.22663084
+          e20: -0.38439026
+          e21: 0.027696904
+          e22: 0.9227551
+          e23: 13.775167
           e30: 0
           e31: 0
           e32: 0
@@ -4067,10 +4172,10 @@ VisualEffect:
       m_Array: []
     m_NamedObject:
       m_Array:
-      - m_Value: {fileID: 1092101748}
+      - m_Value: {fileID: 1913159088}
         m_Name: ColorMap
         m_Overridden: 1
-      - m_Value: {fileID: 2000329093}
+      - m_Value: {fileID: 422317664}
         m_Name: DepthMap
         m_Overridden: 1
     m_Bool:
