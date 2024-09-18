@@ -278,7 +278,7 @@ MonoBehaviour:
   active: 1
   shadows:
     m_OverrideState: 1
-    m_Value: {r: 0.41531685, g: 0.45127818, b: 0.4811321, a: 1}
+    m_Value: {r: 0.3936, g: 0.44058686, b: 0.48235294, a: 1}
   highlights:
     m_OverrideState: 0
     m_Value: {r: 0.5, g: 0.5, b: 0.5, a: 1}
@@ -478,7 +478,7 @@ MonoBehaviour:
     m_Value: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 2
+    m_Value: 1.85
   directLightingStrength:
     m_OverrideState: 1
     m_Value: 1
@@ -489,7 +489,7 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0.15
   temporalAccumulation:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
   ghostingReduction:
     m_OverrideState: 0
